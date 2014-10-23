@@ -181,8 +181,7 @@ public class MapActivity extends ActionBarActivity implements
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			TextView rootView = new TextView(getActivity());
-			rootView.setText("33333");
+			View rootView = inflater.inflate(R.layout.host_fragment, container, false);
 			return rootView;
 		}
 	}
